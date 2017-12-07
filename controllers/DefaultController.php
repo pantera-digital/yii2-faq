@@ -23,21 +23,4 @@ class DefaultController extends Controller
             'categories' => $categories
         ]);
     }
-
-    public function actionView($id)
-    {
-        $model = $this->findModel($id);
-        return $this->render('view', [
-            'model' => $model,
-        ]);
-    }
-
-    protected function findModel($id)
-    {
-        $model = FaqQuestions::findOne($id);
-        if (is_null($model)) {
-            throw new NotFoundHttpException();
-        }
-        return $model;
-    }
 }
