@@ -21,7 +21,7 @@ php yii migrate/up --migrationPath=@pantera/faq/migrations
 ```
 'modules' => [
     'subscribe' => [
-        'class' => \pantera\faq\...::className(),
+        'class' => \pantera\faq\Module::className(),
     ],
 ],
 ```
@@ -30,7 +30,7 @@ php yii migrate/up --migrationPath=@pantera/faq/migrations
 ```
 'modules' => [
     'subscribe' => [
-        'class' => \pantera\faq\...::className(),
+        'class' => \pantera\faq\admin\Module::className(),
     ],
 ],
 ```
