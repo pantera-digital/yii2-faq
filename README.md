@@ -11,6 +11,10 @@ composer require pantera-digital/yii2-faq "@dev"
 ```
 "pantera-digital/yii2-faq": "@dev"
 ```
+и выполните команду
+```
+composer update
+```
 
 ## Миграции
 ```
