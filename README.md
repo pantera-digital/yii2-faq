@@ -11,6 +11,10 @@ composer require pantera-digital/yii2-faq "@dev"
 ```
 "pantera-digital/yii2-faq": "@dev"
 ```
+и выполните команду
+```
+composer update
+```
 
 ## Миграции
 ```
@@ -20,7 +24,7 @@ php yii migrate/up --migrationPath=@pantera/faq/migrations
 ## Frontend 
 ```
 'modules' => [
-    'subscribe' => [
+    'faq' => [
         'class' => \pantera\faq\Module::className(),
     ],
 ],
@@ -29,7 +33,7 @@ php yii migrate/up --migrationPath=@pantera/faq/migrations
 ## Backend 
 ```
 'modules' => [
-    'subscribe' => [
+    'faq' => [
         'class' => \pantera\faq\admin\Module::className(),
     ],
 ],
