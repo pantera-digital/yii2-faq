@@ -3,11 +3,9 @@
 namespace pantera\faq\controllers;
 
 use pantera\faq\models\FaqCategories;
-use pantera\faq\models\FaqQuestions;
 use pantera\faq\Module;
 use yii\filters\AccessControl;
 use yii\web\Controller;
-use yii\web\NotFoundHttpException;
 
 /**
  * Faq controller
@@ -15,9 +13,6 @@ use yii\web\NotFoundHttpException;
  */
 class DefaultController extends Controller
 {
-    /**
-     * @inheritdoc
-     */
     public function behaviors()
     {
         return [
