@@ -4,6 +4,5 @@ namespace pantera\faq;
 
 class Module extends \yii\base\Module
 {
-
-    
+    public $access = ['?'];
 }
