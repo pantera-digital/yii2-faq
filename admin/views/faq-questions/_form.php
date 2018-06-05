@@ -3,6 +3,7 @@
 use pantera\faq\models\FaqCategories;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use vova07\imperavi\Widget;
 
 /* @var $this yii\web\View */
 /* @var $model \common\modules\cms\faq\common\models\FaqQuestions */
@@ -19,7 +20,17 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'body')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'body')->widget(Widget::className(), [
+        'settings' => [
+            'lang' => 'ru',
+            'minHeight' => 200,
+            'plugins' => [
+                'clips',
+                'fullscreen',
+            ],
+        ],
+    ]);
+    ?>
 
     <?= $form->field($model, 'sort')->textInput() ?>
 
