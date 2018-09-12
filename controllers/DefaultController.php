@@ -5,13 +5,12 @@ namespace pantera\faq\controllers;
 use pantera\faq\models\FaqCategories;
 use pantera\faq\Module;
 use yii\filters\AccessControl;
-use yii\web\Controller;
 
 /**
  * Faq controller
  * @property Module $module
  */
-class DefaultController extends Controller
+class DefaultController extends \yii\web\Controller
 {
     public function behaviors()
     {
@@ -22,7 +21,6 @@ class DefaultController extends Controller
                     [
                         'allow' => true,
                         'roles' => $this->module->access,
-
                     ],
                 ],
             ],
