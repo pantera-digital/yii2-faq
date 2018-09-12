@@ -27,7 +27,7 @@ class FaqCategoriesController extends Controller
                     [
                         'actions' => ['index', 'update', 'create', 'delete'],
                         'allow' => true,
-                        'roles' => ['admin'],
+                        'roles' => $this->module->access,
                     ],
                 ],
             ],
