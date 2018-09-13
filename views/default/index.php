@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $category \pantera\faq\models\FaqCategories */
 /* @var $question \pantera\faq\models\FaqQuestions */
 
-$this->title = Yii::t('frontend', 'FAQ');
+$this->title = 'FAQ';
 
 ?>
 
