@@ -35,6 +35,7 @@ php yii migrate/up --migrationPath=@pantera/faq/migrations
 'modules' => [
     'faq' => [
         'class' => \pantera\faq\admin\Module::class,
+        'access' => ['admin'],
     ],
 ],
 ```
