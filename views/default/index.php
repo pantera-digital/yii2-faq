@@ -7,10 +7,9 @@ use yii\helpers\Html;
 /* @var $question \pantera\faq\models\FaqQuestions */
 
 $this->title = 'FAQ';
+$this->params['breadcrumbs'][] = ['label' => 'FAQ'];
 
-?>
-
-<h1 class="page-title"><?= Html::encode($this->title) ?></h1>
+?><h1 class="page-title"><?= Html::encode($this->title) ?></h1>
 
 <div class="faq-page">
 <?php foreach ($categories as $category): ?>
